@@ -23,6 +23,7 @@ int BinarySearch(int a[],int i,int n){
 
 以下为优化：
 
+![](https://github.com/CQ-Quest/binary-search/blob/master/binary%20search1.png)
 version1:
 这种适用于答案落在左半区间，一般适用于求解最小化最大值。
 当区间[l, r]的更新操作是r = mid; l = mid + 1;时，计算mid时不需要加1。
@@ -38,6 +39,7 @@ int bsearch_1(int l, int r)
 }
 _______________________________________________________________
 version2
+![](https://github.com/CQ-Quest/binary-search/blob/master/binary%20search2.png)
 这种适用于答案落在右半区间，一般适用于求解最大化最小值。
 当区间[l, r]的更新操作是r = mid - 1; l = mid;时，计算mid时需要加1。
 
