@@ -26,18 +26,19 @@
 version1:
 ![](https://github.com/CQ-Quest/binary-search/blob/master/binary%20search1.png)
 这种适用于答案落在左半区间，一般适用于求解最小化最大值。  
-当区间[l, r]的更新操作是r = mid; l = mid + 1;时，计算mid时不需要加1。  
-		int bsearch_1(int l, int r)    
-		{    
-		    while (l < r) //l=r结束    
-		    {    
-			int mid = l + r >> 1;    
-			if (check(mid)) r = mid;    
-			else l = mid + 1;    
-		    }    
-		    return l;    
-		}    
-_______________________________________________________________
+当区间[l, r]的更新操作是r = mid; l = mid + 1;时，计算mid时不需要加1。 
+
+			int bsearch_1(int l, int r)    
+			{    
+			    while (l < r) //l=r结束    
+			    {    
+				int mid = l + r >> 1;    
+				if (check(mid)) r = mid;    
+				else l = mid + 1;    
+			    }    
+			    return l;    
+			}    
+		_______________________________________________________________
 version2  
 ![](https://github.com/CQ-Quest/binary-search/blob/master/binary%20search2.png)  
 这种适用于答案落在右半区间，一般适用于求解最大化最小值。    
